@@ -165,9 +165,22 @@
     .icon { width:18px;height:18px;display:inline-block;vertical-align:middle } #p{
       color: rgba(255, 255, 255, 0.377)
     }
+      #bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.4); /* Optional darkening */
+}
   </style>
 </head>
 <body>
+    <video autoplay muted loop id="bg-video">
+  <source src="183279-870457579_large.mp4" type="video/mp4">
+</video>
   <main class="container" role="main">
 
     <!-- Left: image (uses your uploaded file path) -->
@@ -188,3 +201,4 @@
             <h6>Work : Na9es mi tnasnis</h6>
 
             
+
